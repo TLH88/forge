@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.forge" name="The Forge Repository" version="1.0.0" provider-name="Foundry 88 Labs">
+    <extension point="xbmc.addon.repository" name="The Forge Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/TLH88/forge/main/repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/TLH88/forge/main/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/TLH88/forge/main/repo/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Updates for The Forge skin and helper.</summary>
+        <description lang="en_GB">Keeps The Forge skin and its helper add-on up to date.</description>
+    </extension>
+</addon>
+<addon id="script.forge.helper" name="Forge Helper" version="0.1.0" provider-name="Foundry 88 Labs">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py"/>
+    <extension point="xbmc.python.pluginsource" library="plugin.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <summary lang="en_GB">First-run setup, one-time account sign-in and the What to Watch picker for The Forge skin.</summary>
+        <description lang="en_GB">Installs and configures what The Forge needs, keeps Trakt, Real-Debrid, Premiumize, YouTube and metadata API credentials in one place and pushes them to installed add-ons through small JSON connector files, and serves the What to Watch picker.</description>
+    </extension>
+</addon>
+<addon id="skin.forge" name="The Forge" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.1.0">
+    <requires>
+        <import addon="xbmc.gui" version="5.17.0" />
+        <import addon="script.skinshortcuts" version="0.4.0" />
+        <import addon="script.forge.helper" version="0.1.0" />
+        <import addon="script.skinvariables" version="1.0.0" />
+        <import addon="script.texturemaker" version="0.2.8" />
+        <import addon="plugin.video.themoviedb.helper" version="5.1.11~nexus" />
+        <import addon="plugin.video.youtube" version="7.0.0" />
+        <import addon="resource.images.weathericons.white" version="0.0.1" />
+        <import addon="resource.images.studios.coloured" version="0.0.1" />
+    </requires>
+    <extension debugging="false" defaultthemename="Textures.xbt" effectslowdown="1" point="xbmc.gui.skin">
+        <res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">The Forge: a single-look, add-on centric skin built around Fen Light, Trakt and a NAS library.</summary>
+        <description lang="en">The Forge is a custom skin by Merlin88 (Foundry 88 Labs). It grew out of Chameleon, a personal fork of Arctic Horizon 2.1 (jurialmunkey, DeFiNiek), and keeps that skin's menu, widget and view plumbing while replacing its look. One look, no presets. Forge Helper handles first-run setup, one-time account sign-in and the What to Watch picker.</description>
+        <platform>all</platform>
+        <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
+        <forum />
+        <source />
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="2.0.07">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/fenlight.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/lib/service.py"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
+        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon. This is an English language only add-on.</description>
+        <platform>all</platform>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
+        <license/>
+        <assets>
+            <icon>resources/media/fenlight_icon.png</icon>
+            <fanart>resources/media/fenlight_fanart2.jpg</fanart>
+        </assets>
+        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+    </extension>
+</addon>
+</addons>
