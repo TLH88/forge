@@ -2,12 +2,12 @@
 
 The Forge is a Kodi 21 (Omega) skin by Merlin88 (Foundry 88 Labs), plus a small helper add-on that sets everything up for you. One look, built around Fen Light, Trakt and a NAS library.
 
-This is the 0.1.0 base: The Forge's identity, colours and plumbing on the Arctic Horizon layouts. The custom Forge screens replace those layouts release by release.
+This is the 0.1.1 base: The Forge's identity, colours and plumbing on the Arctic Horizon layouts. The custom Forge screens replace those layouts release by release.
 
 ## Install
 
 1. In Kodi, open Settings, System, Add-ons and turn on **Unknown sources**.
-2. Download `script.forge.helper-0.1.0.zip` from this repository.
+2. Download `script.forge.helper-0.1.1.zip` from this repository.
 3. In Kodi, open Add-ons, **Install from zip file**, and pick that zip.
 4. A setup wizard starts on its own. It installs the skin and the add-ons it needs (including YouTube for trailers), signs you in to Trakt and Premiumize, and configures playback.
 
@@ -16,7 +16,7 @@ The wizard can be reopened any time from Add-ons, Forge Helper, Run setup wizard
 ## What is in here
 
 - `repo/` is a Kodi add-on repository. The wizard installs it so the skin and helper update themselves.
-- `script.forge.helper-0.1.0.zip` is the one file you install by hand.
+- `script.forge.helper-0.1.1.zip` is the one file you install by hand.
 
 No accounts or personal settings are included. Everyone signs in with their own.
 
