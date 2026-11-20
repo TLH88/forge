@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.forge" name="The Forge Repository" version="1.0.0" provider-name="Foundry 88 Labs">
+<addon id="repository.forge" name="The Forge Repository" version="1.0.1" provider-name="Foundry 88 Labs">
     <extension point="xbmc.addon.repository" name="The Forge Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/TLH88/forge/main/repo/addons.xml</info>
@@ -12,9 +12,12 @@
         <platform>all</platform>
         <summary lang="en_GB">Updates for The Forge skin and helper.</summary>
         <description lang="en_GB">Keeps The Forge skin and its helper add-on up to date.</description>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
     </extension>
 </addon>
-<addon id="script.forge.helper" name="Forge Helper" version="0.1.1" provider-name="Foundry 88 Labs">
+<addon id="script.forge.helper" name="Forge Helper" version="0.2.0" provider-name="Foundry 88 Labs">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -29,13 +32,16 @@
         <license>GPL-3.0-or-later</license>
         <summary lang="en_GB">First-run setup, one-time account sign-in and the What to Watch picker for The Forge skin.</summary>
         <description lang="en_GB">Installs and configures what The Forge needs, keeps Trakt, Real-Debrid, Premiumize, YouTube and metadata API credentials in one place and pushes them to installed add-ons through small JSON connector files, and serves the What to Watch picker.</description>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
     </extension>
 </addon>
-<addon id="skin.forge" name="The Forge" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.1.1">
+<addon id="skin.forge" name="The Forge" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.2.0">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
-        <import addon="script.forge.helper" version="0.1.0" />
+        <import addon="script.forge.helper" version="0.2.0" />
         <import addon="script.skinvariables" version="1.0.0" />
         <import addon="script.texturemaker" version="0.2.8" />
         <import addon="plugin.video.themoviedb.helper" version="5.1.11~nexus" />
