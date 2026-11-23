@@ -17,7 +17,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="script.forge.helper" name="Forge Helper" version="0.8.1" provider-name="Foundry 88 Labs">
+<addon id="script.forge.helper" name="Forge Helper" version="0.8.2" provider-name="Foundry 88 Labs">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -37,7 +37,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="skin.forge" name="The Forge" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.3.1">
+<addon id="skin.forge" name="The Forge" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.3.2">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
