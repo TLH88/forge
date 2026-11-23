@@ -16,7 +16,7 @@ Layouts not yet replaced still come from Arctic Horizon.
 ## Install
 
 1. In Kodi, open Settings, System, Add-ons and turn on **Unknown sources**.
-2. Download `script.forge.helper-0.3.0.zip` from this repository.
+2. Download `script.forge.helper-0.4.0.zip` from this repository.
 3. In Kodi, open Add-ons, **Install from zip file**, and pick that zip.
 4. A setup wizard starts on its own. It installs the skin and the add-ons it needs (including YouTube for trailers), signs you in to Trakt and Premiumize, and configures playback.
 
@@ -25,7 +25,7 @@ The wizard can be reopened any time from Add-ons, Forge Helper, Run setup wizard
 ## What is in here
 
 - `repo/` is a Kodi add-on repository. The wizard installs it so the skin and helper update themselves.
-- `script.forge.helper-0.3.0.zip` is the one file you install by hand.
+- `script.forge.helper-0.4.0.zip` is the one file you install by hand.
 
 No accounts or personal settings are included. Everyone signs in with their own.
 
