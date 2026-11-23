@@ -17,7 +17,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="script.forge.helper" name="Forge Helper" version="0.4.3" provider-name="Foundry 88 Labs">
+<addon id="script.forge.helper" name="Forge Helper" version="0.5.0" provider-name="Foundry 88 Labs">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
