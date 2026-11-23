@@ -37,7 +37,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="skin.forge" name="The Forge" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.2.8">
+<addon id="skin.forge" name="The Forge" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.2.9">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
